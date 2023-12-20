@@ -63,11 +63,11 @@ class PomodoroTimer:
         reset_menu.add_command(label="Reset Session Count", command=self.reset_session_count)
 
         # Load and resize button images
-        play_button_image = Image.open("/Users/jbono/Documents/py/progs/pomodoro_images/play_button.png")
+        play_button_image = Image.open("pomodoro_images/play_button.png")
         play_button_image = play_button_image.resize((50, 50), Image.LANCZOS)
         self.play_icon = ImageTk.PhotoImage(play_button_image)
 
-        pause_button_image = Image.open("/Users/jbono/Documents/py/progs/pomodoro_images/pause_button.png")
+        pause_button_image = Image.open("pomodoro_images/pause_button.png")
         pause_button_image = pause_button_image.resize((50, 50), Image.LANCZOS)
         self.pause_icon = ImageTk.PhotoImage(pause_button_image)
 
